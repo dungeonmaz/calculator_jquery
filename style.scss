@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+$primary: #6c0586;
+$secondary: #e64dee;
+$bg: #111;
+$bg_light: #ccc;
+
+$base_border_radius: 0.25em;
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background-color: $bg;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 3px 1px rgba($color: #000000, $alpha: 1.0);
+    border-radius: $base_border_radius;
+    width: min-content;
+}
+
+input[type=button] {
+    width: 2em;
+    height: 2em;
+    border-radius: $base_border_radius;
+    margin: 0.1em;
+    color: $primary;
+    background-color: $bg;
+    border: none;
+    box-shadow: 2px 2px 5px 2px rgba($color: #000000, $alpha: 1.0);
+}
+
+.screen {
+    width: 100%;
+	height: 80px;
+	background-color: $bg_light;
+    border-radius: $base_border_radius;
+    outline: none;
+    border: none;
+}

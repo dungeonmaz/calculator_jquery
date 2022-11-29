@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="centered">
+        <form name="form" class="calculator">
+            <input class="screen">
+            <table>
+                <tr>
+                    <td><input type="button" value="(" onclick="addCharacter('(')"></td>
+                    <td><input type="button" value=")" onclick="addCharacter(')')"></td>
+                    <td><input type="button" onclick="deleteCharacter()" value="<"></td>
+                    <td><input type="button" onclick="clearScreen()" value="C"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="addCharacter('7')"></td>
+                    <td><input type="button" value="8" onclick="addCharacter('8')"></td>
+                    <td><input type="button" value="9" onclick="addCharacter('9')"></td>
+                    <td><input type="button" value="/" onclick="addCharacter('/')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="addCharacter('4')"></td>
+                    <td><input type="button" value="5" onclick="addCharacter('5')"></td>
+                    <td><input type="button" value="6" onclick="addCharacter('6')"></td>
+                    <td><input type="button" value="*" onclick="addCharacter('*')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onclick="addCharacter('1')"></td>
+                    <td><input type="button" value="2" onclick="addCharacter('2')"></td>
+                    <td><input type="button" value="3" onclick="addCharacter('3')"></td>
+                    <td><input type="button" value="-" onclick="addCharacter('-')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" onclick="addCharacter('0')"></td>
+                    <td><input type="button" value="." onclick="addCharacter('.')"></td>
+                    <td><input type="button" value="=" onclick="calculate()" ></td>
+                    <td><input type="button" value="+" onclick="addCharacter('+')"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
